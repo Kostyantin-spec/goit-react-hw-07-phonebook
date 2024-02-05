@@ -20,15 +20,6 @@ export const ContactForm = () => {
   const handlerSubmit = event => {
     event.preventDefault();
 
-    // const data = { name, number };
-    // const newObj = { ...data, id: nanoid() };
-
-    // const isInContacts = (contacts, newObj) => {
-    //   return contacts.find(
-    //     ({ name }) => name.toLowerCase() === newObj.name.toLowerCase()
-    //   );
-    // };
-
     const isInContacts = contacts.some(
       contact => contact.name.toLowerCase().trim() === name.toLowerCase().trim()
     );
